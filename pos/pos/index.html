@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/functions.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+    <div>
+        <h1 class="titulo">Don Baraton</h1>
+        <h2 class="subtitulo">No es bueno pero es muy barato</h2>
+    </div>
+    </div>
+    <div class="contenedor_producto">
+        <table id="tabla">
+            <tr>
+                <th class="Cantidad">Cantidad</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Total</th>
+            </tr>
+            <tbody id="tproductos">
+        
+            </tbody>
+        </table>
+
+    </div>
+    <input type="text" id="codigo" class="entrada" autofocus onkeydown="buscarproducto(event)">
+    <div class="botones">
+        <input type="button" value="" class="boton" id="btn1" onclick="cancelarventa();">
+        <input type="button" value="" class="boton" id="btn2">
+        <input type="button" value="" class="boton" id="btn3">
+        <input type="button" value="" class="boton" id="btn4">
+        <input type="button" value="" class="boton" id="btn5">
+
+        <div id="feedback" class="feedback"></div>
+
+        <div class="total">
+            <h1 id="total">$ 0.00</h1>
+        </div>
+    </div>
+
+</body>
+</html>
